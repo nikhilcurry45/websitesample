@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+footer{
+    background-color: gray;
+}
+nav{
+    background-color: orange;
+    cursor: pointer;
+    justify-content: space-between;
+    position:sticky;
+    height: 17vh;
+}
+.logo{
+    margin-left: -30px;
+}
+
+nav ul{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    position: relative;
+    float: right;
+    margin-top: 5px;
+    margin-right: 450px;
+    font-size: 25px;
+    list-style: none;
+    left:200px;
+}
+
+nav ul li{
+    margin:0px 5px;
+    padding:10px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+    
+}
+nav ul li a:hover{
+    color:black;
+    background-color: #FF8300;
+    
+    
+}
+.login{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    position: relative;
+    float: right;
+    margin-top: 1px;
+    margin-right: -800px;
+    font-size:30px;
+    padding:10px;
+}
+.login:hover{
+    background-color: black;
+    color:white;
+}
+.menubut{
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    font-size: 50px
+    padding:10px 10px;
+    font-family: 'Roboto',sans-serif;
+    display:none;
+    position: relative;
+    border:none;
+    background:none;
+}
+.menubut:hover{
+    background-color: black;
+    color: white;
+}
+#click{
+    display: none;
+}
+.sectionc{
+    float:right;
+    margin-top: -15px;
+}
+
+@media (max-width:700px){
+    .menubut{
+        display: block;
+    }
+    nav ul{
+       display: block;
+       position: fixed;
+       background-color: white;
+       color:black;
+       top: -300px;
+       text-align: center;
+       margin-left:100px;
+      
+    }
+    nav ul:hover{
+        background-color: #D6DFEC;
+    }
+   #click:checked~ul{
+     top:90px;
+   }
+   #click{
+    display: none;
+   }
+   
+}
